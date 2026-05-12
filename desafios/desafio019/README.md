@@ -12,7 +12,7 @@ Crie uma classe `Livro` que simule a passagem de páginas. Ao criar o objeto, in
 4. Teste a navegação entre as páginas.
 
 ```bash
-python main.py
+python desafio019.py
 ```
 
 ## Critérios de aceitação
@@ -42,4 +42,4 @@ l1.avancar_paginas(100)
 
 ## Solução
 
-[Ver solução](./desafios/desafio019/desafio019.py)
+[Ver solução](./desafio019.py)
