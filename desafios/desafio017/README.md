@@ -13,7 +13,7 @@ Crie também um método que mostre uma etiqueta de preço desse produto.
 4. Verifique se a etiqueta de preço está sendo exibida corretamente.
 
 """bash
-python main.py
+python desafio017.py
 """
 
 ## Critérios de aceitação
@@ -42,4 +42,4 @@ p2.etiqueta()
 
 ## Solução
 
-desafios/desafio017/desafio017.py
+[Ver Solução](./desafio017.py)
