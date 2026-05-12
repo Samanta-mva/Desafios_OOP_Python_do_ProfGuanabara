@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Pasta de arquivos não necessários
+.idea/
+desafios/.idea/
+__pycache__/
+*.pyc
+.venv/
+exercicios/
+rich/
+desafios/teste.py
