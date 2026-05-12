@@ -12,7 +12,8 @@ class ControleRemoto:
         self.canal_atual:int = canal
         self.volume_atual:int = volume
         self.ligado:bool = False
-
+        self.msg = ('Digite @ para Ligar/Desligar a TV\n'
+                    'E digite 0 (zero) para encerrar.\n')
 
     def liga_desliga(self):
         self.ligado = not self.ligado
@@ -77,7 +78,7 @@ class ControleRemoto:
 c = ControleRemoto()
 while True:
     c.mostra_tv()
-    comando = str(input(f'\n< CH[{c.canal_atual}] >  - VOL[{c.volume_atual}] +  '))
+    comando = str(input(f'\n{c.msg}\n< CH[{c.canal_atual}] >  - VOL[{c.volume_atual}] +  '))
     match comando:
         case '0': break
         case '@': c.liga_desliga()
