@@ -12,7 +12,7 @@ Crie uma classe `Funcionario`, onde seja possível cadastrar nome, setor e cargo
 4. Verifique se a apresentação do funcionário está sendo exibida corretamente.
 
 ```bash
-python main.py
+python desafio016.py
 ```
 
 ## Critérios de aceitação
@@ -41,4 +41,4 @@ c2.apresentar()
 
 ## Solução
 
-desafios/desafio016/desafio016.py
+[Ver Solução](./desafio016.py)
