@@ -12,7 +12,7 @@ Implemente uma classe abstrata `Poligono` com quantidade de lados e métodos abs
 4. Teste com quadrado de lado 12 e círculo de raio 20.
 
 ```bash
-python desafio023.py
+python __main__.py
 ```
 
 ## Critérios de aceitação
@@ -28,7 +28,13 @@ python desafio023.py
 ## Exemplo de código
 
 ``` bash
+p1 = Quadrado(20)
+print(f'O perímetro é de {p1.perimetro()}')
+print(f'A area é de {p1.area()}\n')
 
+p2 = Circulo(10)
+print(f'O perímetro é de {p2.perimetro()}')
+print(f'A area é de {p2.area()}\n')
 ```
 
 
@@ -40,6 +46,6 @@ python desafio023.py
 
 ## Solução
 
-[Ver solução](./desafio023.py)
+[Ver solução](./__main__.py)
 
 ---
