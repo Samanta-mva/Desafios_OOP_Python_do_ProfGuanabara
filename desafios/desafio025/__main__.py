@@ -1,16 +1,23 @@
-from classes import *
+from modalidade import *
+from rich import print
+from rich.table import Table
 
 
 def main():
-    dist = 10
-    entrega = Moto(dist)
-    print(f'Frete de {type(entrega).__name__} em {dist}km = {entrega.calc_frete()}')
+    distancia = int(input('Qual será a distancia do frete? \n→ km = '))
+    entrega1 = Moto(distancia)
+    entrega2 = Caminhao(distancia)
+    entrega3 = Drone(distancia)
 
-    entrega2 = Caminhao(dist)
-    print(f'Frete de {type(entrega2).__name__} em {dist}km = {entrega2.calc_frete()}')
+    tabela = Table(title='Tabela de Fretes', width=55, show_lines=True)
+    tabela.add_column('Tipo do Frete')
+    tabela.add_column('Distância')
+    tabela.add_column('Valor')
 
-    entrega3 = Drone(dist)
-    print(f'Frete de {type(entrega3).__name__} em {dist}km = {entrega3.calc_frete()}')
+    tabela.add_row(f'{type(entrega1).__name__}', f'{distancia}km', f'{entrega1.calc_frete()}')
+    tabela.add_row(f'{type(entrega2).__name__}', f'{distancia}km', f'{entrega2.calc_frete()}')
+    tabela.add_row(f'{type(entrega3).__name__}', f'{distancia}km', f'{entrega3.calc_frete()}')
+    print(tabela)
 
 
 if __name__ == '__main__':
