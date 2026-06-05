@@ -27,16 +27,16 @@ class Caminhao(Transporte):
             return self.frete
 
         else:
-            return 'Para frete de caminhão a distância mínima deve ser de 50km.'
+            return 'Distância mínima 50km.'
 
 
 class Drone(Transporte):
     def calc_frete(self):
         super().__init__(self.distancia)
-        fator = 1.20
+        fator = 9.5
         if self.distancia <= 10:
             self.frete = f'R${self.distancia * fator:.2f}'
             return self.frete
 
         else:
-            return 'Para frete de drone a distância máxima deve ser de 10km.'
+            return 'Distância máxima 10km.'

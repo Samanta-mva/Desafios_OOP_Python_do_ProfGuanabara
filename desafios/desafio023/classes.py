@@ -27,11 +27,10 @@ class Quadrado(Poligono):
 class Circulo(Poligono):
     def perimetro(self):
         super().__init__(self.distancia)
-        return f'{pi * float(self.distancia):.1f}cm.'
+        return f'{2 * pi * float(self.distancia):.1f}cm.'
 
     def area(self):
         super().__init__(self.distancia)
-        raio = (self.distancia / 2) ** 2
-        return f'{pi * raio:.1f}cm².'
+        return f'{pi * self.distancia ** 2:.1f}cm².'
 
 

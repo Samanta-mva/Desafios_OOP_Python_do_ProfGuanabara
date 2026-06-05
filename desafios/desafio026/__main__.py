@@ -1,7 +1,7 @@
 from classes import *
 
 def main():
-    f1 = Horista( 'Paulo', 12, 200)
+    f1 = Horista( 'Paulo', 25, 250)
     # print(f1.calc_salario())
     f1.analisar_salario()
 
